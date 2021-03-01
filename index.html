@@ -1,0 +1,391 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TravelScandinavia - Skandinavien Bereisen</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/slideshow.css">
+    <link rel="icon" href="/images/Logo/ts-icon.jpg">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.5.0/css/ol.css" type="text/css">
+    <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.5.0/build/ol.js"></script>
+</head>
+<body>
+
+    <!-- NAVIGATION TOP --> 
+<div class="container topnav">
+    <div class="logo"  id="navbox2">
+        <img src="/images/Logo/TS-logo.jpg" alt="logo">
+    </div>
+    <div class="container" style="text-align: center;">
+    <div class="search-bar" id="navbox1">
+        <form action="" class="search-form">
+            <input type="text" name="suche" id="suche" placeholder="&#128270; Suchen...">
+        </form>
+    </div>
+    </div>
+    <div class="navbox"  id="navbox3">
+        <a href="./laender.html" class="top-navlink">Länder</a>
+        <div class="dropdown-content">
+            <a href="/laender.html#norwegen"style="border-top: solid 1px lightgrey;">Norwegen</a>
+            <a href="/laender.html#schweden">Schweden</a>
+            <a href="/laender.html#finnland">Finnland</a>
+            <a href="/laender.html#island">Island</a>
+            <a href="/laender.html#daenemark" style="border-bottom: solid 1px lightgrey;">Dänemark</a>
+        </div>
+    </div>
+    <div class="navbox"  id="navbox4">
+        <a href="" class="top-navlink">Buchungen</a>
+    </div>
+    <div class="navbox"  id="navbox5">
+        <a href="" class="top-navlink">Shop</a>
+    </div>
+    <div class="navbox" id="navbox6">
+        <a href="/einloggen.html" class="top-navlink">Einloggen</a><br>
+    </div>
+</div>
+<hr>
+<br>
+<br>
+    <!-- END NAVIGATION TOP -->
+    
+    <!-- MAIN -->
+    <br>
+<div class="container main" >
+    <h1 class="title" style="margin: auto;text-align: center;font-size: 2.5rem;">Skandinavien</h1>
+</div>
+
+<div class="container">
+    <div class="divider" style="width: 45%;margin: auto;">
+    </div>
+</div>
+
+<br>
+<div class="container main" style="margin-top:4px;">
+    <img src="/collection/aurelia_borealis1.jpg"  alt="" id="skandi_pic">
+    <br>
+    <sub>Image by Unsplash.com/ 600px</sub>
+</div>
+<br>
+<br>
+<div class="container main linkbox" id="navbar">
+    <div id="linkbox1">
+        <a href=""><img src="/collection/mini-icons/icon4(unedited).jpg" alt=""></a>
+        <a href="" class="main-navlink" id="main-navlink1">Reisen</a>
+    </div>
+    <div id="linkbox2" >
+        <a href=""><img src="/collection/mini-icons/icon2(unedited).jpg" alt=""></a>
+        <a href="" class="main-navlink" id="main-navlink2">Kultur</a>
+    </div>
+    <div id="linkbox3">
+        <a href=""><img src="/collection/mini-icons/icon3(unedited).jpg" alt=""></a>
+        <a href="" class="main-navlink" id="main-navlink3">Guides</a>
+    </div>
+    <div id="linkbox4">
+        <a href="/gallery.html"><img src="/collection/mini-icons/icon1(unedited).jpg" alt=""></a>
+        <a href="/gallery.html" class="main-navlink" id="main-navlink4">Gallerie</a>
+    </div>
+</div>
+    
+<br>
+<div class="container main beschreibung " id="feld" >
+    <h2>Willkommen <br>
+         - <br>
+        Im Reich des Nordens
+    </h2>
+    <p>Endless day, perpetual night. Rocking festivals, majestic aurora borealis. With effortlessly chic cities and remote forests, Scandinavia attracts style-gurus and wilderness-hikers alike.</p>
+
+    <div class="boobie invis smooth">
+        <h2>Das ist - <br>
+                Skandinavien</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum velit quas cum vel dolor delectus recusandae ipsa corrupti soluta, quod sit quisquam vitae maxime maiores ducimus ex sapiente esse debitis dignissimos distinctio nihil ullam ratione expedita exercitationem. Aliquam provident qui accusantium esse debitis soluta commodi neque, est quis quae, perferendis molestias repellat? Fugit quod dignissimos nam non sint, corporis similique labore eaque a! Ratione eligendi corporis veritatis dolores fuga autem sed ullam, in quis perspiciatis exercitationem quasi eveniet facere magni repudiandae officia reiciendis voluptates quo consequatur pariatur, nobis vitae? Molestiae dolorum voluptate, nobis error inventore modi minima nemo id voluptatibus?</p>
+    </div>
+</div>
+
+<div class="container main">
+    <button class="mehrlesen btn-removeinvis">Mehr Lesen &#10549;</button>
+</div>
+<br><br>
+<div class="container">
+    <div class="divider"></div>
+</div>
+<!-- MAP -->
+<br><br><br>
+<div class="container main">
+    <h1 class="title">Städte, Orte & special Places</h1>
+    <br><br>
+    <div style="border-radius: 5px;">
+    <!-- MAP -->
+    <div id="map" class="map"></div>
+    </div>
+    
+    <!-- MAP END -->
+    <!-- ATTRAKTIONEN -->
+    <div class="attraktionen-container">
+        <div class="attraktion">
+            <div class="city-background"></div>
+            <h3>Oslo</h3>
+            <h4>Norwegen</h4>
+            <h5>Hauptstadt</h5>
+        </div>
+        <div class="attraktion">
+            <h3>Stockholm</h3>
+            <h4>Schweden</h4>
+            <h5>Hauptstadt</h5>
+        </div>
+        <div class="attraktion">
+            <h3>Finnland</h3>
+            <h4>Helsinki</h4>
+            <h5>Hauptstadt</h5>
+        </div>
+        <div class="attraktion">
+            <h3>Island</h3>
+            <h4>Reykjavik</h4>
+            <h5>Hauptstadt</h5>
+        </div>
+        <div class="attraktion">
+            <h3>Dänemark</h3>
+            <h4>Kopenhagen</h4>
+            <h5>Hauptstadt</h5>
+        </div>
+        <br>
+    </div>
+    <div>
+        <a href="" class="mehrlesen" style="text-decoration: none;" >
+            <h4>Alle ansehen></h4>
+        </a>
+    </div>
+</div>
+<br>
+<br>
+<br>
+<!-- ATTRAKTIONEN -->
+<!-- TOUREN -->
+<div class="container">
+    <div class="divider"></div>
+</div>
+<br><br><br>
+<div class="container">
+    <div>
+        <h1 class="title">Erfahren sie Skandinavien</h1>
+        <br>
+        <h2 class="title">Tagestouren</h2>
+    </div>
+    <br><br>
+    <div class="touren">
+        <div class="tour">
+            <img src="/collection/kajak2.jpg"  alt="tourpic">
+            <div><h3> Kayak fahren</h3></div>
+            <div class="tour-preis"> 1 Tag / 75€</div>
+            <div class="tour-descr"><p>Stromschnellen, Adrenalin und atemberaubende Natur.</p></div>
+            
+        </div>
+        <div class="tour">
+            <img src="/collection/iceland.jpg"  alt="tourpic">
+            <div><h3> Schneepferde begleiten</h3></div>
+            <div class="tour-preis"> 1 Tag / 75€</div>
+            <div class="tour-descr"><p>Adrenalin und atemberaubende Natur.</p></div>
+            
+        </div>
+        <div class="tour">
+            <img src="/collection/sehenswürdigkeit.jpg" alt="tourpic">
+            <div><h3>Meereswanderung </h3></div>
+            <div class="tour-preis"> 2 Tage / 95€</div>
+            <div class="tour-descr"><p>Wattenmeer,  Steinformationen und mehr</p></div>
+            
+        </div>
+    </div>
+</div>
+<br><br>
+<!-- TOUREN END -->
+<div class="container">
+    <div class="divider"></div>
+</div>
+<br>
+<br>
+<!-- HIGHLIGHTS -->
+<div class="container">
+    <h1 class="title">Highlights</h1>
+    <div class="slideshow-container">
+        <div class="mySlides fade" style="text-align:center">
+            <div class="numbertext">1 / 3</div>
+            <img src="/collection/iceland.jpg" style="width: 93%;height:  auto;border-radius: 10px;z-index: -0;" alt="">
+            <div class="text">Wilde Pferde in Island</div>
+        </div>
+        <div class="mySlides fade" style="text-align:center">
+            <div class="numbertext">2 / 3</div>
+            <img src="/collection/aurelia_borealis3.jpg" style="width: 93%;max-height: 400px;border-radius: 10px;z-index: -1;" alt="">
+            <div class="text">Aurora Borealis aka. Nordlichter</div>
+        </div>
+        <div class="mySlides fade" style="text-align:center">
+            <div class="numbertext">3 / 3</div>
+            <img src="/collection/shore.jpg" style="width: 93%;max-height:  400px;border-radius: 10px;z-index: -1;" alt="">
+            <div class="text">Küste</div>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+        <a class="next" onclick="plusSlides(1)">&#10095</a>
+    </div>
+    <br>
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+</div>
+<!-- HIGHLIGHTS END -->
+<!-- UNTERKUENFTE -->
+<br><br>
+<div class="container">
+    <div class="divider"></div>
+</div>
+<br><br><br>
+<div class="main container">
+    <div>
+        <h1 class="title">Die schönsten Unterkünfte</h1>
+        <h2 class="title">von Einzigartig bis Eigenartig</h2>
+        <br>
+        <br><br>
+        <br>
+        <div class="unterkuenfte">
+            <div class="unterkunft">
+                <a href=""><img src="/collection/unterkunft_natur.jpg" style="width: 100%;" alt=""></a>
+                <a href=""><p>Ferienhäuser</p></a>
+                
+            </div>
+            <div class="unterkunft">
+                <a href=""><img src="/collection/unterkunft_speziell.jpg" style="width: 60%;" alt=""></a>
+                <a href=""><p>AirBnB</p></a>
+            </div>
+            <div class="unterkunft">
+                <a href=""><img src="/collection/tinyhouse_sea_mountain.jpg" style="width: 100%;" alt=""></a>
+                <a href=""><p>Ferienwohnungen</p></a>
+            </div>
+            <div class="unterkunft">
+                <a href=""><img src="/collection/stockholm.jpg" style="width: 100%;" alt=""></a>
+                <a href=""><p>Hotels</p></a>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+<!-- UNTERKUENFTE END -->
+<!-- VIDEOS -->
+    <div class="container">
+        <div class="divider"></div>
+    </div>
+    <br><br><br>
+</div>
+<div class="main container videos">
+    <br>
+    <br>
+    <h1 class="title">Videos</h1>
+    <div class="videoframecontainer">
+        <div class="videoframe">
+            <video src="/collection/Rainbow_Nebula_4K_Motion_Background.mp4" ></video>
+        </div>
+    </div>
+    <h3 class="title">Einführung</h3>
+    <br>
+    <br>
+</div>
+<!-- VIDEOS END -->
+<br><br><br>
+<div class="container">
+    <div class="divider"></div>
+</div>
+<br><br>
+<!-- <h1 class="title">Links</h1> -->
+<div class="main container linkfooter">
+    <br>
+    <div class="footerlinkbox">
+        <h3 class="footerheader">Länder</h3>
+        <ul>
+        <li><a href="">Island</a></li>
+        <li><a href="">Norwegen</a></li>
+        <li><a href="">Schweden</a></li>
+        <li><a href="">Island</a></li>
+        <li><a href="">Dänemark</a></li>        
+        </ul>
+    </div>
+    <div class="footerlinkbox">
+        <h3 class="footerheader">Shop</h3>
+        <ul>
+        <li><a href="">Geschenke</a></li>
+        <li><a href="">Mitgliedschaft</a></li>
+        <li><a href="">Postkarten</a></li>
+        </ul>
+    </div>
+
+    <div class="footerlinkbox">
+        <h3 class="footerheader">Unterkünfte</h3>
+        <ul>
+        <li><a href="">Hotels</a></li>
+        <li><a href="">Ferienwohnungen</a></li>
+        <li><a href="">Ferienhäuser</a></li>
+        <li><a href="">Postkarten</a></li>
+        </ul>
+    </div>
+    <div class="footerlinkbox">
+        <h3 class="footerheader">Abenteuer</h3>
+        <ul>
+        <li><a href="">Geschenke</a></li>
+        <li><a href="">Mitgliedschaft</a></li>
+        <li><a href="">Postkarten</a></li>
+        </ul>
+    </div>
+</div>
+<br><br>
+<div class="container">
+    <div class="divider"></div>
+</div>
+<br>
+<!-- <h1 class="title">Footer</h1> -->
+<div class="main container footer">
+    <div class="footerlinks">
+        <a href="">Logo</a>
+        <a href="">Spezialangebote</a>
+        <a href="">Arbeite für uns</a>
+        <a href="">Über uns</a>
+        <a href="">Kontakt</a>
+        <a href="">AGB</a>
+        <a href="">Lizensierung</a>
+    </div>
+    <div class="social-media">
+        <a href="" class="fa fa-instagram"></a>
+        <!-- <a href="" class="fa fa-facebook"></a> -->
+        <a href="" class="fa fa-twitter"></a>
+        <a href="" class="fa fa-snapchat"></a>
+        <a href="" class="fa fa-youtube"></a>
+        <a href="" class="fa fa-reddit"></a>
+    </div>
+    <br><br><br><br>
+    <div class="pooper">
+        © 2021 TravelScandinavia. All rights reserved. No part of this site may be reproduced without our written permission.
+    </div>
+    <br><br>
+</div>
+        
+    <!-- END MAIN -->
+    <script type="text/javascript">
+        var map = new ol.Map({
+          target: 'map',
+          layers: [
+            new ol.layer.Tile({
+              source: new ol.source.OSM()
+            })
+          ],
+          view: new ol.View({
+            center: ol.proj.fromLonLat([5.45, 63.53]),
+            zoom: 3.5
+          })
+        });
+      </script>
+      <script src="/scripts.js"></script>
+</body>
+</html>

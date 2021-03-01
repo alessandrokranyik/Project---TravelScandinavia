@@ -1,0 +1,116 @@
+[Landing-Page]
+    [NAV]
+        -Searchbar
+        -Logo
+        -Buttons/
+            -3x :hover=Drop-Down-Menu's
+                -Länder(Norwegen, Schweden, Finnland, Island)
+                -Buchungen (Buchungen ansehen, vergangene Reisen)
+                -Shop
+            -1x Button 'Einloggen'
+
+
+
+    [Main]
+        ° [Landing-Container]
+            -Title
+            -4 Buttons: 'Reisen', 'Kultur', 'Guides', 'Gallerie'
+            -Images/wallpapers 
+                //Slideshow
+            -'Welcome to Scandinavia' Header
+                -Paragraph
+                    - Button 'Mehr lesen ->'
+
+        ° [Map-Container]
+            -Select: Sort by
+            -Event-boxes
+                -slider
+                -Button: 'Alle ansehen ->'
+            -Map
+
+        ° [Highlights-Container]
+            -Image/Header+Paragraph(Description)
+                //Slideshow
+
+        ° [Experiences]
+            -Image/Header3/Header2 + price //Slideshow
+                -Button: 'Book'
+            -Link 'Alle ansehen ->'
+
+        ° [Guide-books- & Newsletter- Boxes]
+            -Image
+            -Header
+            -Buttons: 'Beitreten', 'Newsletter'
+
+        ° [Video-Container]
+            -Header: 'Videos'
+            -Videoframe
+            -Title
+        
+        ° [Recent-Stories]
+            -Boxes:
+                -Header
+                -Description
+                -Header2
+                -Description 
+                -Image
+            -Link 'Mehr lesen'
+
+        ° [Links-Reference Summary]
+            5-col
+                -Länder
+                -Shop
+                -Forum
+                -Guides
+            Newsletter-subscription-box 
+                -Email
+                -Agb
+                -Button 'anmelden'
+
+        ° [Footer]
+            -Logo
+            -Links (Über uns, ..., ..., ..., ...)
+            -Social Media Links Box
+                -Icons
+                    -Facebook
+                    -Instagram
+                    -Youtube
+                    -Figma
+                    -Snapchat
+            - (c) copyright TravelSkandinavia TM
+            -Language selection Box
+
+
+
+
+
+
+[Einloggen/Registrierung]
+    ° Form
+        -Email/username
+            -Email vergessen?
+        -Passwort
+            -Passwort vergessen?
+
+    ° Registrieren
+        - Neuer Benutzer
+        - Google Account
+        -
+
+
+
+[Länder-Selection-Page]
+      ° [automated-Slideshow] (15s Transition)
+            -Images (4)
+            -Header
+                -current view
+
+      ° [Länder-select-container // width=60%]
+            -Searchbar, Filter, Sort-by
+            -Länder-Boxes (Img, Header)
+            -Pages 1,2,3,4,... (->)
+
+      ° [Side-Banner // width=40%]
+         -Img
+         -Header,Description
+         -Button-Link
