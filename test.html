@@ -1,32 +1,64 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.5.0/css/ol.css" type="text/css">
-    <style>
-      .map {
-        height: 400px;
-        width: 80%;
-      }
-    </style>
-    <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.5.0/build/ol.js"></script>
-    <title>OpenLayers example</title>
-  </head>
-  <body>
-    <h2>My Map</h2>
-    <div id="map" class="map"></div>
-    <script type="text/javascript">
-      var map = new ol.Map({
-        target: 'map',
-        layers: [
-          new ol.layer.Tile({
-            source: new ol.source.OSM()
-          })
-        ],
-        view: new ol.View({
-          center: ol.proj.fromLonLat([37.41, 8.82]),
-          zoom: 4
-        })
-      });
-    </script>
-  </body>
+<head>
+    <title>TravelScandinavia - Skandinavien Bereisen</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="" href="">
+    <link rel="icon" href="/images/Logo/ts-icon.jpg">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script> -->
+</head>
+<body>
+<!-- NAV -->
+    <div class="container topnav">
+        <div class="logo" id="navbox2">
+            <a href="/index.html">
+                <img src="/images/Logo/TS-logo.jpg" alt="logo">
+            </a>
+        </div>
+        </div>
+    </div>
+    <hr>
+<br>
+<br>
+<!-- NAV END -->
+<!-- Einloggen -->
+<div class="container einloggen">
+    <br>
+    <br>
+    <div class="login">
+        <a href="" class="btn" id="google">
+            <i class="fa fa-google"></i>  Login mit Google
+        </a>
+        <a href="" class="btn" id="facebook">
+            <i class="fa fa-facebook"></i>  Login mit Facebook
+        </a>
+        <a href="" class="btn" id="twitter">
+            <i class="fa fa-twitter zwitscher" style="color:white;opacity:1;border:none;"></i>  Login mit Twitter
+        </a>
+    </div>
+</div>
+<br>
+<div class="container">
+    <div class="divider"></div>
+</div>
+<br>
+<div class="login manuell">
+    <form action="">
+        <input type="email" name="email" placeholder="Email" id="">
+        <br>
+        <br>
+        <input type="password" name="password" placeholder="Passwort" id="">
+    </form>
+    <br>
+    <button>Einloggen</button>
+    <a href=""><p style="font-size: small;height: .125rem;">Neuer Benutzer? Hier Registrieren</p></a>
+</div>
+
+<!-- Einloggen END -->
+</body>
 </html>
