@@ -14,12 +14,8 @@ function addSticky() {
 
 
 const btn = document.querySelector('.btn-removeinvis');
-console.log(btn);
-console.log(btn.classList)
 
 const feld = document.querySelector('.boobie');
-console.log(feld);
-console.log(feld.classList);
 
 btn.addEventListener('click', (e) => {
     feld.classList.remove('invis');

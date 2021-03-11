@@ -146,6 +146,7 @@ a.top-navlink {
     background-color:white;
 }
 .sticky {
+    border-bottom: solid 1px grey;
     position:fixed;
     z-index: 3;
     top:0;
@@ -207,6 +208,14 @@ a.main-navlink:hover {
     transition: .5s ease-in-out;
 }
 /* Welcome */
+#readmore {
+    font-size: 1rem;
+}
+
+.readless {
+    
+}
+
 .mehrlesen h3 {
     font-family: Arial, Helvetica, sans-serif;
     text-align:center;
